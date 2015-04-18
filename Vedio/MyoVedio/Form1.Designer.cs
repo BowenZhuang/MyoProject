@@ -1,4 +1,4 @@
-﻿namespace VedioQuiz
+﻿namespace MyoVedio
 {
     partial class Form1
     {
@@ -28,36 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cameraControl1 = new Camera_NET.CameraControl();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // cameraControl1
+            // panel1
             // 
-            this.cameraControl1.DirectShowLogFilepath = "";
-            this.cameraControl1.Location = new System.Drawing.Point(319, 243);
-            this.cameraControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.cameraControl1.Name = "cameraControl1";
-            this.cameraControl1.Size = new System.Drawing.Size(665, 498);
-            this.cameraControl1.TabIndex = 0;
-            this.cameraControl1.Load += new System.EventHandler(this.cameraControl1_Load);
+            this.panel1.Location = new System.Drawing.Point(-2, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(832, 650);
+            this.panel1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 1051);
-            this.Controls.Add(this.cameraControl1);
+            this.ClientSize = new System.Drawing.Size(827, 647);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Camera_NET.CameraControl cameraControl1;
-
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

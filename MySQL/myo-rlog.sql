@@ -26,3 +26,10 @@ create table rlog1 (
 	rdata7 integer not null,
 	rdata8 integer not null
 )engine = MyIsam;
+
+create table vedioFile (
+	id Integer not null auto_increment primary key,
+	filePath varchar(200) not null,
+	startTime datetime not null,
+	endTime datetime not null 
+)engine = MyIsam;
